@@ -6,10 +6,12 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#cce5ff;
+    /*background-color:#cce5ff;*/
 }
 .wrap{
+    background-color: #ffffff;
+}
+.max-w{
     max-width: 1400px;
     margin: 0 auto;
-    background-color: #ffffff;
 }
