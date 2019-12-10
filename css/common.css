@@ -1,0 +1,15 @@
+/*
+*@Description:
+*@Author:Chig@qq.com
+*@Date:2019/12/10 15:50
+*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#cce5ff;
+}
+.wrap{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
