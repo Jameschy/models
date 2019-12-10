@@ -3,7 +3,12 @@
 *@Author:Chig@qq.com
 *@Date:2019/12/10 15:50
 */
-body{
+html,
+body,
+ul,
+li,
+p{
+    font-size: 12px;
     margin: 0;
     padding: 0;
     /*background-color:#cce5ff;*/
@@ -12,7 +17,7 @@ body{
     background-color: #ffffff;
 }
 .max-w{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .blog-facelist{
