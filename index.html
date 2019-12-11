@@ -15,7 +15,7 @@
 <body>
 <div class="wrap">
     <header class="row max-w">
-        <ul class="nav col-md-12 justify-content-end">
+        <ul class="nav col-md-12 justify-content-end border-bottom">
             <li class="nav-item">
                 <a class="nav-link active" href="#">标签云</a>
             </li>
@@ -218,10 +218,10 @@
                     <li class="list-group-item">后端</li>
                     <li class="list-group-item">运维</li>
                     <li class="list-group-item">佛教</li>
-                    <li class="list-group-item">经济</li>
-                    <li class="list-group-item">经济</li>
-                    <li class="list-group-item">经济</li>
-                    <li class="list-group-item">经济</li>
+                    <li class="list-group-item">历史</li>
+                    <li class="list-group-item">乡野</li>
+                    <li class="list-group-item">异域</li>
+                    <li class="list-group-item">CMS</li>
                     <li class="list-group-item">唐诗</li>
                 </ul>
             </div>
@@ -299,29 +299,109 @@
             <div class="row mt-5 mr-1">
                 <h5 class="blog-block-title c-red">【精彩博文】</h5>
                 <hr class="blog-block-border"/>
-                <ul class="list-unstyled">
-                    <li class="media my-4 b-rgba-grey5">
-                        <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">List-based media object</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </li>
-                    <li class="media my-4 b-rgba-grey5">
-                        <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">List-based media object</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </li>
-                    <li class="media my-4 b-rgba-grey5">
-                        <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">List-based media object</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </li>
-                </ul>
+                <nav>
+                    <div class="nav nav-pills" id="nav-tab-article" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-tech-tab" data-toggle="tab" href="#nav-tech" role="tab" aria-controls="nav-tech" aria-selected="true">极客无界</a>
+                        <a class="nav-item nav-link" id="nav-idea-tab" data-toggle="tab" href="#nav-idea" role="tab" aria-controls="nav-idea" aria-selected="false">荒漠甘泉</a>
+                        <a class="nav-item nav-link" id="nav-read-tab" data-toggle="tab" href="#nav-read" role="tab" aria-controls="nav-read" aria-selected="false">神游录</a>
+                        <a class="nav-item nav-link" id="nav-read-tab" data-toggle="tab" href="#nav-read" role="tab" aria-controls="nav-read" aria-selected="false">人间道</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent-article">
+                    <div class="tab-pane fade show active" id="nav-tech" role="tabpanel" aria-labelledby="nav-tech-tab">
+                        <ul class="list-unstyled">
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">本地局域网MySQL数据库连接方法（Navcat权限设置）</h5>
+                                    <p class="c-rgba-black5">
+                                        需求： 1.将某一本地前端自定义页面模板，导入到帝国系统，应用到网站 2.将导入的页面在站点中打开为目录式链接 www.abc.com/softlink/ 环境： 1.windows服务器 2.帝国CMS后台 要点步骤： 1.登陆远程服务器，在服务器根目录建立空文件夹 softlink 2.将本地样
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">IIS环境下PHP版本过低无法Sql查询的解决</h5>
+                                    <p class="c-rgba-black5">
+                                        需求：帝国后台添加个后台框，输入地址，原页面重写成所指链接页面 重点：当输入框输入地址，提交到后台后，打开原链接，该页面会读取php文件GetUrlPage.php 根据排错，发现 $sql 无法输出相应的值，换做低版本写法： 经测试OK！！！ 结论：PHP版本低于程序语句标准，Sql语句不起作用!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">帝国CMS链接域名重写、伪静态处理</h5>
+                                    <p class="c-rgba-black5">
+                                        情景： 当同一局域网环境中，需要协同开发并涉及到本地数据库互联情况，有关权限需要开放！ 设置流程： 1.受访端连接 打开Navcat>>>>点击本地数据库>>>>点击用户>>>>新建用户 设置用户名、主机及密码，（注意，主机填%表示不限主机，局域网环境输入用户名及密码均可登陆，如需设置特定局域网ip
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-idea" role="tabpanel" aria-labelledby="nav-idea-tab">
+                        <ul class="list-unstyled">
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">本地局域网MySQL数据库连接方法（Navcat权限设置）</h5>
+                                    <p class="c-rgba-black5">
+                                        需求： 1.将某一本地前端自定义页面模板，导入到帝国系统，应用到网站 2.将导入的页面在站点中打开为目录式链接 www.abc.com/softlink/ 环境： 1.windows服务器 2.帝国CMS后台 要点步骤： 1.登陆远程服务器，在服务器根目录建立空文件夹 softlink 2.将本地样
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">IIS环境下PHP版本过低无法Sql查询的解决</h5>
+                                    <p class="c-rgba-black5">
+                                        需求：帝国后台添加个后台框，输入地址，原页面重写成所指链接页面 重点：当输入框输入地址，提交到后台后，打开原链接，该页面会读取php文件GetUrlPage.php 根据排错，发现 $sql 无法输出相应的值，换做低版本写法： 经测试OK！！！ 结论：PHP版本低于程序语句标准，Sql语句不起作用!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">帝国CMS链接域名重写、伪静态处理</h5>
+                                    <p class="c-rgba-black5">
+                                        情景： 当同一局域网环境中，需要协同开发并涉及到本地数据库互联情况，有关权限需要开放！ 设置流程： 1.受访端连接 打开Navcat>>>>点击本地数据库>>>>点击用户>>>>新建用户 设置用户名、主机及密码，（注意，主机填%表示不限主机，局域网环境输入用户名及密码均可登陆，如需设置特定局域网ip
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-read" role="tabpanel" aria-labelledby="nav-read-tab">
+                        <ul class="list-unstyled">
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">本地局域网MySQL数据库连接方法（Navcat权限设置）</h5>
+                                    <p class="c-rgba-black5">
+                                        需求： 1.将某一本地前端自定义页面模板，导入到帝国系统，应用到网站 2.将导入的页面在站点中打开为目录式链接 www.abc.com/softlink/ 环境： 1.windows服务器 2.帝国CMS后台 要点步骤： 1.登陆远程服务器，在服务器根目录建立空文件夹 softlink 2.将本地样
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">IIS环境下PHP版本过低无法Sql查询的解决</h5>
+                                    <p class="c-rgba-black5">
+                                        需求：帝国后台添加个后台框，输入地址，原页面重写成所指链接页面 重点：当输入框输入地址，提交到后台后，打开原链接，该页面会读取php文件GetUrlPage.php 根据排错，发现 $sql 无法输出相应的值，换做低版本写法： 经测试OK！！！ 结论：PHP版本低于程序语句标准，Sql语句不起作用!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="media my-4 b-rgba-grey5">
+                                <a href="###"  class="mr-3 media-face" ><img src="images/square/18b415f2-01c1-4b76-989e-0dd8f1f037cd.jpg" alt="..."></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">帝国CMS链接域名重写、伪静态处理</h5>
+                                    <p class="c-rgba-black5">
+                                        情景： 当同一局域网环境中，需要协同开发并涉及到本地数据库互联情况，有关权限需要开放！ 设置流程： 1.受访端连接 打开Navcat>>>>点击本地数据库>>>>点击用户>>>>新建用户 设置用户名、主机及密码，（注意，主机填%表示不限主机，局域网环境输入用户名及密码均可登陆，如需设置特定局域网ip
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </aside>
     </div>
@@ -333,7 +413,7 @@
 </div>
 </body>
 <script type="text/javascript">
-    // $('#myTab a').on('click', function (e) {
+    // $('#nav-tab-article a').on('click', function (e) {
     //     e.preventDefault()
     //     $(this).tab('show')
     // })
