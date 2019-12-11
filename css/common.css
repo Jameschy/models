@@ -22,6 +22,13 @@ body{
     background-color: #ffffff;
 }
 
+.blog-block-title,
+.blog-hotnews-title{
+    width: 100%;
+}
+.blog-block-border{
+    width: 100%;
+}
 /*今日推荐*/
 .blog-hotnews{
 
@@ -39,6 +46,24 @@ body{
 .blog-latestnews-face img{
     width: 100%;
 }
+
+/*侧栏公告Tab*/
+#nav-tabContent {
+    overflow: hidden;
+    height: 10rem;
+}
+
+/*侧栏消息列表*/
+.media-face{
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    overflow: hidden;
+}
+.media-face img{
+    width: 100%;
+}
+
 
 /*footer*/
 
