@@ -1,0 +1,70 @@
+/*
+*@Description:
+*@Author:Chig@qq.com
+*@Date:2019/12/11 9:39
+*/
+.c-white{
+    color: #FFFFFF;
+}
+.c-black{
+    color: #000000;
+}
+.c-red{
+    color: #FF0000;
+}
+.c-blue{
+    color: #007BFF;
+}
+.c-grey{
+    color: #F2F2F2;
+}
+
+.c-rgba-white{
+    color: #FFFFFF;
+}
+.c-rgba-black5{
+    color: rgba(0,0,0,.5);
+}
+.c-rgba-red{
+    color: #FF0000;
+}
+.c-rgba-blue{
+    color: #007BFF;
+}
+.c-rgba-grey{
+    color: #F2F2F2;
+}
+
+/*background*/
+.b-white{
+    background-color: #FFFFFF;
+}
+.b-black{
+    background-color: #000000;
+}
+.b-red{
+    background-color: #FF0000;
+}
+.b-blue{
+    background-color: #007BFF;
+}
+.b-grey{
+    background-color: #F2F2F2;
+}
+
+/*b-rgba*/
+.b-rgba-white{
+    background-color: #FFFFFF;
+}
+.b-rgba-black{
+    background-color: #000000;
+}
+.b-rgba-red{
+    background-color: #FF0000;
+}
+.b-rgba-blue{
+    background-color: #007BFF;
+}
+.b-rgba-grey5{
+    background-color: rgba(242,242,242,0.5)
+}

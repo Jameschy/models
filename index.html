@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>博客首页</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-reboot.css">-->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <script type="text/javascript" src="js/jquery-slim.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -29,16 +35,19 @@
 
         <ul class="nav col-md-8">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
+                <a class="nav-link active" href="#">主页</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">术业专攻</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">人间掠影</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">耕作心田</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">浮生</a>
             </li>
         </ul>
     </header>
@@ -97,37 +106,230 @@
             </div>
 
             <!--今日推荐-->
-            <div class="col-md-12">
-                <h3>今日推荐</h3>
-                <p class="lead">
+            <div class="col-md-12 blog-hotnews mt-5">
+                <h5 class="blog-hotnews-title c-red">【今日推荐】</h5>
+                <hr class="mt-3"/>
+                <p class="lead blog-hotnews-brief">
                     一次我下载几部电影，发现如果同时下载多部要等上几个小时，然后我把最想看的做个先后排序，去设置同时只能下载一部，结果是不到一杯茶功夫我就能看到最想看的电影。 这就像我们一段时间内想干成很多事情，是同时干还是有选择有顺序的干，结果很不一样。同时...
                 </p>
             </div>
-
             <!--最新文章列表-->
-            <div class="col-md-12">
+            <div class="col-md-12 blog-latestnews mt-5">
+                <h5 class="blog-hotnews-title c-red">【最新消息】</h5>
+                <hr class="mt-3"/>
+                <ul class="">
+                    <li class="row mt-3 mb-3 b-rgba-grey5 py-2">
+                        <div class="col-md-4 blog-latestnews-face">
+                            <img class="" src="images/arclist/1d5d39f86b79a5065a936a2291a9448f.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="blog-latestnews-title"><span class="blog-sort b-blue c-white mr-3 px-2">术业专攻</span>帝国CMS 列表内容模板[!--empirenews.listtemp--]改写为灵动标签[e:loop={}]</h5>
+                            <p class="blog-latestnews-data mt-3">
+                                <span class="blog-latestnews-time">2019-12-10</span>
+                                <span class="blog-latestnews-visit">1200</span>
+                                <span class="blog-latestnews-comment">123</span>
+                            </p>
+                            <p class="blog-latestnews-brief c-rgba-black5 mt-3">
+                                <span>摘要：需求描述： 1.将专题列表下的列表单元，自动根据专题页标题或者页面关键词来匹配展示； 2.第一个精确匹配，后面十一个模糊匹配，总数12个； 正文模板中，引入部分为： [!--empirenews.listtemp--]<!--list.var2-->[!--empirenews.listtemp-- <span class="c-red">阅读全文</span></span>
+                            </p>
+                        </div>
+                    </li>
 
+                    <li class="row mt-3 mb-3 b-rgba-grey5 py-2">
+                        <div class="col-md-4 blog-latestnews-face">
+                            <img class="" src="images/arclist/1e6a75b57cac56a724bfac723c8fe0e1.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="blog-latestnews-title"><span class="blog-sort b-blue c-white mr-3 px-2">术业专攻</span>帝国CMS 列表内容模板[!--empirenews.listtemp--]改写为灵动标签[e:loop={}]</h5>
+                            <p class="blog-latestnews-data mt-3">
+                                <span class="blog-latestnews-time">2019-12-10</span>
+                                <span class="blog-latestnews-visit">1200</span>
+                                <span class="blog-latestnews-comment">123</span>
+                            </p>
+                            <p class="blog-latestnews-brief c-rgba-black5 mt-3">
+                                <span>摘要：需求描述： 1.将专题列表下的列表单元，自动根据专题页标题或者页面关键词来匹配展示； 2.第一个精确匹配，后面十一个模糊匹配，总数12个； 正文模板中，引入部分为： [!--empirenews.listtemp--]<!--list.var2-->[!--empirenews.listtemp-- <span class="c-red">阅读全文</span></span>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="row mt-3 mb-3 b-rgba-grey5 py-2">
+                        <div class="col-md-4 blog-latestnews-face">
+                            <img class="" src="images/arclist/db6fea9c2b552a74bc703078cc8f5463.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="blog-latestnews-title"><span class="blog-sort b-blue c-white mr-3 px-2">术业专攻</span>帝国CMS 列表内容模板[!--empirenews.listtemp--]改写为灵动标签[e:loop={}]</h5>
+                            <p class="blog-latestnews-data mt-3">
+                                <span class="blog-latestnews-time">2019-12-10</span>
+                                <span class="blog-latestnews-visit">1200</span>
+                                <span class="blog-latestnews-comment">123</span>
+                            </p>
+                            <p class="blog-latestnews-brief c-rgba-black5 mt-3">
+                                <span>摘要：需求描述： 1.将专题列表下的列表单元，自动根据专题页标题或者页面关键词来匹配展示； 2.第一个精确匹配，后面十一个模糊匹配，总数12个； 正文模板中，引入部分为： [!--empirenews.listtemp--]<!--list.var2-->[!--empirenews.listtemp-- <span class="c-red">阅读全文</span></span>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="row mt-3 mb-3 b-rgba-grey5 py-2">
+                        <div class="col-md-4 blog-latestnews-face">
+                            <img class="" src="images/arclist/f69f3c3cd2719641eb373425bf9e741f.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="blog-latestnews-title"><span class="blog-sort b-blue c-white mr-3 px-2">术业专攻</span>帝国CMS 列表内容模板[!--empirenews.listtemp--]改写为灵动标签[e:loop={}]</h5>
+                            <p class="blog-latestnews-data mt-3">
+                                <span class="blog-latestnews-time">2019-12-10</span>
+                                <span class="blog-latestnews-visit">1200</span>
+                                <span class="blog-latestnews-comment">123</span>
+                            </p>
+                            <p class="blog-latestnews-brief c-rgba-black5 mt-3">
+                                <span>摘要：需求描述： 1.将专题列表下的列表单元，自动根据专题页标题或者页面关键词来匹配展示； 2.第一个精确匹配，后面十一个模糊匹配，总数12个； 正文模板中，引入部分为： [!--empirenews.listtemp--]<!--list.var2-->[!--empirenews.listtemp-- <span class="c-red">阅读全文</span></span>
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <li class="row mt-3 mb-3 b-rgba-grey5 py-2">
+                        <div class="col-md-4 blog-latestnews-face">
+                            <img src="images/arclist/a083ac5565291ffd2f9a6710f7fb2b8c.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="blog-latestnews-title"><span class="blog-sort b-blue c-white mr-3 px-2">术业专攻</span>帝国CMS 列表内容模板[!--empirenews.listtemp--]改写为灵动标签[e:loop={}]</h5>
+                            <p class="blog-latestnews-data mt-3">
+                                <span class="blog-latestnews-time">2019-12-10</span>
+                                <span class="blog-latestnews-visit">1200</span>
+                                <span class="blog-latestnews-comment">123</span>
+                            </p>
+                            <p class="blog-latestnews-brief c-rgba-black5 mt-3">
+                                <span>摘要：需求描述： 1.将专题列表下的列表单元，自动根据专题页标题或者页面关键词来匹配展示； 2.第一个精确匹配，后面十一个模糊匹配，总数12个； 正文模板中，引入部分为： [!--empirenews.listtemp--]<!--list.var2-->[!--empirenews.listtemp-- <span class="c-red">阅读全文</span></span>
+                            </p>
+                        </div>
+                    </li>
+
+
+
+                </ul>
             </div>
         </section>
         <aside class="col-md-3">
-            <ul class="d-flex align-content-start flex-wrap">
-                <li class="list-group-item">前端</li>
-                <li class="list-group-item">后端</li>
-                <li class="list-group-item">运维</li>
-                <li class="list-group-item">佛教</li>
-                <li class="list-group-item">经济</li>
-                <li class="list-group-item">经济</li>
-                <li class="list-group-item">经济</li>
-                <li class="list-group-item">经济</li>
-                <li class="list-group-item">唐诗</li>
+            <div class="row">
+                <ul class="d-flex align-content-start flex-wrap">
+                    <li class="list-group-item">前端</li>
+                    <li class="list-group-item">后端</li>
+                    <li class="list-group-item">运维</li>
+                    <li class="list-group-item">佛教</li>
+                    <li class="list-group-item">经济</li>
+                    <li class="list-group-item">经济</li>
+                    <li class="list-group-item">经济</li>
+                    <li class="list-group-item">经济</li>
+                    <li class="list-group-item">唐诗</li>
+                </ul>
+            </div>
+
+            <div class="row">
+            <!--<h5 class="blog-hotnews-title c-red">【公告栏】</h5>-->
+                <ul class="nav nav-tabs" id="navInfo">
+                    <li role="presentation" class="nav-item active">
+                        <a href="#blog_info"
+                           data-toggle="tab">网站公告</a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a href="#blog_ower" data-toggle="tab">联系站长</a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a href="#blog_daily" data-toggle="tab">每日一语</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" style="padding: 10px;">
+                    <div class="tab-pane active" id="blog_info">
+                        <p>
+                            欢迎访问慕柳先生的博客！
+                            在这里可以看到前端技术，后端程序，网站内容管理系统等文章，还有我的程序人生！
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="blog_ower">
+                        email:chig@foxmail.com <br/>
+                        QQ:1365716509
+                    </div>
+                    <div class="tab-pane" id="blog_daily">
+                        <p>Do not let what you cannot do interfere with what you can do.<br>
+                            别让你不能做的事妨碍到你能做的事。（John Wooden）</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <ul class="list-group col-md-12">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        帝国CMS 列表内容模板[
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        帝国CMS 列表内容模板[
+                        <span class="badge badge-primary badge-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        帝国CMS 列表内容模板[
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        帝国CMS 列表内容模板[
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        帝国CMS 列表内容模板[
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        帝国CMS 列表内容模板[
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/arclist/ace196370ac00a60d8856c401fc0cc9f.jpg" alt="..." width="85" height="55">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h6 class="media-heading">帝国CMS 列表内容模板[!--empirenews.listtemp--]改写为灵动标签</h6>
+                        <p>
+                           <span>2019-12-12</span>
+                            <span>1520</span>
+                            <span>152</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="media-list">
+                <li class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/arclist/ace196370ac00a60d8856c401fc0cc9f.jpg" alt="..." width="85" height="55">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        ...
+                    </div>
+                </li>
             </ul>
         </aside>
     </div>
     <footer class="max-w">
-        footer
+        <div class="container">
+            <p>© 2019 <a href="" draggable="false">chigs.com</a> &nbsp; <a href="#" target="_blank" rel="nofollow" draggable="false">粤ICP备20191210-1</a> &nbsp; &nbsp; <a href="http://www.mycodes.net/" target="_blank" draggable="false">源码之家</a></p>
+        </div>
     </footer>
 </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    $('#nav a').on('click', function(e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
 </html>
