@@ -48,7 +48,10 @@ body{
 }
 
 /*侧栏公告Tab*/
-#nav-tabContent {
+nav, .tab-content{
+    width: 100%;
+}
+.tab-content {
     overflow: hidden;
     height: 10rem;
 }
