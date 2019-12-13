@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>广告数据反馈测试</title>
+    <style>
+        .data_box input{
+            width: 450px;
+        }
+        #ad_block{
+            width: 375px;
+            height: 667px;
+            border: 1px solid #999999;
+            overflow: scroll;
+        }
+        #ad_block div,
+        #ad_block div img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="data_box">
+    url: <input type="text" id="url" value="http://cms.vip123zone.com:9527/api/getad.php" /><br/>
+    广告位id-aid: <input type="number" id="aid"><br/>
+    应用id-sid: <input type="number" id="sid"><br/>
+</div>
+<button id="submit">提交参数测试</button>
+<button id="clearPage">重置页面</button>
+<button id="stopAutoAsk" >暂停</button>
+<!--<button id="startAutoAsk" >开始</button>-->
+<div id="div1"></div>
+
+<div id="ad_block">
+    <div class="ad1">
+
+    </div>
+</div>
+</body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    window.onload = function(){
+        autoAskData;
+        // 定参提交请求
+        $("#submit").click(function() {
+            stopAskData();
+            getData();
+        });
+        // 重置页面
+        $('#clearPage').click(function () {
+            $('#ad_block').empty();
+            $('#aid').val('');
+            $('#sid').val('');
+            console.clear();
+        });
+        // 点击暂停
+        $("#stopAutoAsk").click(function() {
+            console.log('暂停')
+            stopAskData()
+        });
+    };
+
+    // 5s定时轮询
+    var autoAskData = setInterval(getData,5000);
+    function stopAskData(){
+        clearInterval(autoAskData);
+    }
+
+    // 获取广告
+    function getData() {
+        $('#ad_block').empty();
+        var data_url= $('#url').val();
+        var data_aid = $('#aid').val();
+        var data_sid = $('#sid').val();
+
+        $.ajax({
+            url: data_url+"?aid=" + data_aid + "&sid=" + data_sid,
+            type: "post",
+            dataType: "json",
+            success: function (result) {
+                $("#div1").html(result);
+                console.table(result);
+                if (result.status==1) {
+                    // 添加到页面广告
+                    $('#ad_block').append("<div class='ad_"+data_aid+"_"+data_sid+"'>"+
+                        "<a href='###"+result.ad.link+"' onclick='postData(this)'"+
+                        " data-cid='"+result.ad.cid+"' data-aid='"+data_aid+"'>"+
+                        "<img src='"+result.ad.pic+"'/>" +
+                        "<p>"+result.ad.title+"</p></a></div>")
+                }else if (result.status==0){
+                    // 抛出数据异常
+                    $('#ad_block').append("<div>" +
+                        "<p>"+result.msg+"</p>" +
+                        "<span>aid="+data_aid+"</span><br/>"+
+                        "<span>sid="+data_sid+"</span></div>");
+                }
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#ad_block').append("<div>"+textStatus+"</div>");
+                console.log(XMLHttpRequest.status);
+                console.log(XMLHttpRequest.readyState);
+                console.log(textStatus);
+            }
+
+        });
+    }
+
+    // 传送点击参数
+    function postData(obj) {
+        var post_url= 'http://cms.vip123zone.com:9527/api/clickad.php';
+        var post_aid = $(obj).attr("data-aid");
+        var post_cid = $(obj).attr("data-cid");
+
+        $.ajax({
+            url: post_url+"?aid=" + post_aid + "&cid=" + post_cid,
+            type: "post",
+            success: function (result) {
+                console.log('aid---'+post_aid);
+                console.log('cid---'+post_cid);
+                console.log('点击已记录！！'+result)
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#ad_block').append("<div>"+textStatus+"</div>");
+                console.log(XMLHttpRequest.status);
+                console.log(XMLHttpRequest.readyState);
+                console.log(textStatus);
+            }
+
+        });
+    }
+</script>
+</html>
