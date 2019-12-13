@@ -22,6 +22,7 @@ body{
     background-color: #ffffff;
 }
 
+
 .blog-block-title,
 .blog-hotnews-title{
     width: 100%;
@@ -29,6 +30,16 @@ body{
 .blog-block-border{
     width: 100%;
 }
+
+/*页顶*/
+header .blog-menu{
+    height: 65px;
+    line-height: 50px;
+}
+.blog-menu .nav-link{
+    font-size: 1.45rem;
+}
+
 /*今日推荐*/
 .blog-hotnews{
 
