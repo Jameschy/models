@@ -33,7 +33,13 @@ body{
 
 /*页顶*/
 header .blog-logo{
+    font-family: "Berlin Sans FB Demi";
     line-height:60px;
+}
+
+header .blog-logo a{
+    font-family: cursive;
+    font-weight: bold;
 }
 header .blog-menu{
     height: 65px;
@@ -100,4 +106,8 @@ nav, .tab-content{
 
 footer{
     text-align: center;
+}
+footer p{
+    height: 105px;
+    line-height: 105px;
 }
