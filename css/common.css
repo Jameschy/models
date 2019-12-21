@@ -32,12 +32,19 @@ body{
 }
 
 /*页顶*/
+header .blog-logo{
+    line-height:60px;
+}
 header .blog-menu{
     height: 65px;
     line-height: 50px;
 }
 .blog-menu .nav-link{
+    color: #000000;
     font-size: 1.45rem;
+}
+.blog-menu .nav-link-active{
+    color: #007bff;
 }
 
 /*今日推荐*/
